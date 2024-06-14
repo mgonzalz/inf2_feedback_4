@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Listado de Tareas</title>
+    <link href="/content/styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <h1>LISTADO DE TAREAS COMPLETO</h1>

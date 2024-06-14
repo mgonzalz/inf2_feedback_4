@@ -38,7 +38,7 @@ public class TareaController {
     }
 
     /*LISTAR TAREAS*/
-    @GetMapping("/vertarea")
+    @GetMapping({"/vertarea", "/formularioTarea"})
     public String verTareas(Model model) {
         List<Tarea> tareas = tareaService.getAllTarea();
         model.addAttribute("tareas", tareas);

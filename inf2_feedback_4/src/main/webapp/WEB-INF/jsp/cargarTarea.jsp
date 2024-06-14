@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Tareas</title>
+    <link href="/content/styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>FORMULARIO DE TAREAS: CARGA DE TAREAS</h1>
+    <br>
     <form action="formularioTarea" method="post">
-        <label for="titulo">Título</label>
+        <label for="titulo">Titulo</label>
         <input type="text" id="titulo" name="titulo" required>
         <br>
-        <label for="descripcion">Descripción</label>
+        <label for="descripcion">Descripcion</label>
         <input type="text" id="descripcion" name="descripcion" required>
         <br>
         <label for="completada">Estado:</label>
@@ -21,6 +23,7 @@
         <br>
         <input type="submit" value="Enviar">
     </form>
+    <br>
     <form action="/vertarea" method="get">
         <button type="submit">Ver Tareas</button>
     </form>
