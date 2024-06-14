@@ -2,7 +2,6 @@ package com.example.inf2_feedback_4.controllers;
 
 
 import com.example.inf2_feedback_4.models.Tarea;
-import com.example.inf2_feedback_4.models.TareaRepository;
 import com.example.inf2_feedback_4.services.TareaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,15 +38,10 @@ public class TareaController {
     }
 
     /*LISTAR TAREAS*/
-    @GetMapping("/formularioTarea")
+    @GetMapping("/vertarea")
     public String verTareas(Model model) {
         List<Tarea> tareas = tareaService.getAllTarea();
         model.addAttribute("tareas", tareas);
         return "listarTareas";
     }
-
-
-
-
-
 }

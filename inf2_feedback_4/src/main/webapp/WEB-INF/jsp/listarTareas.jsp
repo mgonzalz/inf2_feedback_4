@@ -24,5 +24,8 @@
             <td>${tarea.fechaCreacion}</td>
         </tr>
     </c:forEach>
+</table>
+<br>
+<a href="/">Volver</a>
 </body>
 </html>

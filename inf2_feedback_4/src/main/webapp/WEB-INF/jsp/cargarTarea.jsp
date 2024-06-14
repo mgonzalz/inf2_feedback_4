@@ -21,6 +21,8 @@
         <br>
         <input type="submit" value="Enviar">
     </form>
-    <button><a href="/formularioTarea">Ir a Formulario de Tarea</a></button>
+    <form action="/vertarea" method="get">
+        <button type="submit">Ver Tareas</button>
+    </form>
 </body>
 </html>
