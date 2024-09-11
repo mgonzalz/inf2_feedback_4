@@ -29,12 +29,12 @@ public class TareaServiceImpl implements TareaService{
 
     @Override
     public List<Tarea> getAllTarea() {
-        return tareaRepository.findAll();
+        return this.tareaRepository.findAll();
     }
 
     @Override
     public Tarea getTareaById(Long id) {
-        return tareaRepository.findById(id).orElse(null);
+        return this.tareaRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -52,6 +52,6 @@ public class TareaServiceImpl implements TareaService{
 
     @Override
     public void deleteTarea(Long id) {
-        tareaRepository.deleteById(id);
+        this.tareaRepository.deleteById(id);
     }
 }
